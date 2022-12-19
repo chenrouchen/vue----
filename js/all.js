@@ -1,7 +1,13 @@
 const url = "https://vue-json.onrender.com/";
+
 const token = localStorage.getItem('accessToken');
 const userId = Number(localStorage.getItem('id'));
 const form = document.querySelector('form');
+function init() {
+    localStorage.setItem('accessToken', '');
+    localStorage.setItem('id', 0);
+}
+init();
 function userForm() {
     if (token !== '' & userId !== 2) {
         form.innerHTML = ` <a href="user.html?id=${userId}" class="mx-2">收藏</a>
