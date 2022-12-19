@@ -1,6 +1,6 @@
 if (userId !== 2) {
     alert('您沒有權限進入');
-    document.location.href = `http://127.0.0.1:5500/index.html`;
+    document.location.href = `https://chenrouchen.github.io/vue----/index.html`;
 }
 const inputs = document.querySelectorAll('input');
 const btn = document.querySelector('#btn');

@@ -14,9 +14,9 @@ function logIn() {
             localStorage.setItem('id', id);
 
             if (res.data.user.role === 'admin') {
-                document.location.href = `http://127.0.0.1:5500/admin.html`;
+                document.location.href = `https://chenrouchen.github.io/vue----/admin.html`;
             } else {
-                document.location.href = `http://127.0.0.1:5500/index.html`;
+                document.location.href = `https://chenrouchen.github.io/vue----/index.html`;
             }
         })
         .catch(err => console.log(err))
