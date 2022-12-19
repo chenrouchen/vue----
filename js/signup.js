@@ -6,7 +6,12 @@ function signUp() {
         "email": email.value,
         "password": password.value
     })
-        .then(res => alert('註冊成功'))
+        .then(res => {
+            alert('註冊成功');
+            email.value = '';
+            password.value = '';
+            document.location.href = `http://127.0.0.1:5500/index.html`;
+        })
         .catch(err => console.log(err))
 }
 btn.addEventListener('click', signUp)
